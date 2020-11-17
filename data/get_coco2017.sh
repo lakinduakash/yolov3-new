@@ -16,9 +16,9 @@ unzip -q ${filename} # for coco.zip
 rm ${filename}
 
 # Download and unzip images
-cd coco/images
-f="train2017.zip" && curl http://images.cocodataset.org/zips/$f -o $f && unzip -q $f && rm $f
-f="val2017.zip" && curl http://images.cocodataset.org/zips/$f -o $f && unzip -q $f && rm $f
+#cd coco/images
+#f="train2017.zip" && curl http://images.cocodataset.org/zips/$f -o $f && unzip -q $f && rm $f
+#f="val2017.zip" && curl http://images.cocodataset.org/zips/$f -o $f && unzip -q $f && rm $f
 
 # cd out
-cd ../..
+#cd ../..
