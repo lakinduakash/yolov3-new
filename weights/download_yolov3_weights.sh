@@ -17,6 +17,14 @@
 # yolov3-tiny weights from darknet (first 16 layers only)
 # ./darknet partial cfg/yolov3-tiny.cfg yolov3-tiny.weights yolov3-tiny.conv.15 15
 # mv yolov3-tiny.conv.15 ../
+fileid="acr--89HDhhsUyyU--poTRfRgRRF"
+cookie="dev/null"
+
+if [ field -eq "/dev/null" ] 
+then
+load_cookie();
+curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=${fileid}" >/dev/null
+fi
 
 # new method
 python3 -c "from models import *;
